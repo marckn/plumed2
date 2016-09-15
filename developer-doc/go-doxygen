@@ -8,4 +8,5 @@ source ../sourceme.sh
   echo "INPUT+=" ../src/*/ ../src/*/*/ ../.github/*.md
   echo "REFERENCES_RELATION=NO"
   echo "REFERENCED_BY_RELATION=NO"
+  test -d coverage && echo "ENABLED_SECTIONS+=ENABLECOVERAGE"
 } | doxygen -

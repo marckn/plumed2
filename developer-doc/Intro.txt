@@ -19,6 +19,15 @@ Lastly, we ask that contributors endeavor to maintain the portability of plumed 
 Information about C++
 http://www.parashift.com/c++-faq-lite/
 
+\cond ENABLECOVERAGE
+
+\par Code Coverage
+
+This manual also contains a detailed analysis of which parts of the PLUMED code have been tested when compiling it.
+It can be accessed <a href="../coverage/index.html"> here </a>
+
+\endcond
+
 \defgroup TOOLBOX Tool Box
 @{
 Classes providing basic tools in plumed.
@@ -89,6 +98,7 @@ from other classes.
 Each of these classes provides one directive for the plumed input file.
 This list is built automatically based on the PLUMED_REGISTER_ACTION macro.
 @}
+
 
 
 */

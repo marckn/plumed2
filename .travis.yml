@@ -133,8 +133,8 @@ script:
   - if test "$VALGRIND" == yes ; then OPT=valgrind ; else OPT="" ; fi
   - if test "$PLUMED_CXX" || test -n "$PLUMED_MACPORTS" ; then make -C regtest $OPT ; fi
   - if test "$MAKEDOC" == yes ; then make -C regtest copytodoc ; fi
-  - if test "$MAKEDOC" == yes ; then make doc >/dev/null ; fi
   - if test "$MAKEDOC" == yes ; then make -C developer-doc coverage ; fi
+  - if test "$MAKEDOC" == yes ; then make doc >/dev/null ; fi
   - if test "$PLUMED_CXX" || test -n "$PLUMED_MACPORTS" ; then make -C regtest checkfail ; fi
 
 # CPPCHECK:
